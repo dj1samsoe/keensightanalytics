@@ -13,9 +13,18 @@
     "title": "The Problem We Solve",
     "description": "Struggling to manage data efficiently? Keensight Analytics simplifies the process.",
     "points": [
-      "Data silos slowing down your decision-making?",
-      "High costs of manual operations?",
-      "Inconsistent insights across departments?"
+      {
+        "title": "Data silos slowing down your decision-making?",
+        "image": "/images/decision-making.svg"
+      },
+      {
+        "title": "High costs of manual operations?",
+        "image": "/images/high-cost.svg"
+      },
+      {
+        "title": "Inconsistent insights across departments?",
+        "image": "/images/inconsistent.svg"
+      }
     ]
   },
   "serviceOverview": {
@@ -84,10 +93,22 @@
   "useCases": {
     "title": "Use Cases",
     "cases": [
-      "Predictive Maintenance",
-      "Customer Churn Analysis",
-      "Sales Forecasting",
-      "Supply Chain Optimization"
+      {
+        "title": "Predictive Maintenance",
+        "image": "/images/maintenance.svg"
+      },
+      {
+        "title": "Customer Churn Analysis",
+        "image": "/images/customer.svg"
+      },
+      {
+        "title": "Sales Forecasting",
+        "image": "/images/sales.svg"
+      },
+      {
+        "title": "Supply Chain Optimization",
+        "image": "/images/supply.svg"
+      }
     ]
   },
   "process": {

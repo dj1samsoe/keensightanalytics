@@ -20,7 +20,7 @@ export default function Testimonials({ data }) {
           {feedbacks.map((feedback, idx) => (
             <motion.div
               key={idx}
-              className="bg-gray-800 p-6 rounded-lg"
+              className="bg-gray-800 p-6 rounded-lg flex flex-col justify-between items-center"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}

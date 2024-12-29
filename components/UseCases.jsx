@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function UseCases({ data }) {
   const { title, cases } = data;
@@ -20,13 +21,23 @@ export default function UseCases({ data }) {
           {cases.map((useCase, idx) => (
             <motion.div
               key={idx}
-              className="bg-gray-800 p-6 rounded-lg"
+              className="flex flex-col space-y-3 items-center bg-gray-800 p-6 rounded-lg"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-xl font-semibold">{useCase}</h3>
+              <Image
+                src={useCase.image}
+                alt={useCase.title}
+                width={125}
+                height={125}
+                priority
+                className="object-cover rounded-full"
+              />
+              <h3 className="text-2xl font-semibold text-center">
+                {useCase.title}
+              </h3>
             </motion.div>
           ))}
         </div>

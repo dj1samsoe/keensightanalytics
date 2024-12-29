@@ -20,7 +20,7 @@ export default function Pricing({ data }) {
           {plans.map((plan, idx) => (
             <motion.div
               key={idx}
-              className="bg-gray-700 p-6 rounded-lg text-center"
+              className="bg-gray-700 p-6 rounded-lg text-center flex flex-col justify-between items-center"
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
